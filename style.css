@@ -1,47 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-/* Page Layout Styling Here */
-
-@media screen and (max-width:900px)
-{
-    aside{
-        height: 100%;
-        width: 120px;
-        position: fixed;
-        background: rgb(51, 151, 209);
-    }
-    
-    a{
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 6px 8px 6px 16px;
-        text-align: center;
-        font-family: 'Source Serif Pro';
-    }
-    
-    .content{
-        position: absolute;
-        left: 8rem;
-        margin: 2rem 4rem;
-    }
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.8fr 1.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-areas: 
+        "aside main main main"
+        "aside main main main"
+        "aside main main main"
+        "aside footer footer footer";
+    grid-gap: 0.5rem;
 }
 
-main{
-    display: flex;
-    width: 100vw;
-
+header{
+    background: turquoise;
+    border-radius: 0.5rem;
+    grid-area: header;
 }
+
 aside{
+    grid-area: aside;
     height: 100%;
-    width: 200px;
-    position: fixed;
+    position: sticky;
+    top: 0;
     background: rgb(51, 151, 209);
     display: flex;
     flex-direction: column;
@@ -52,7 +42,7 @@ aside{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-a{
+.sidenav-links{
     display: block;
     color: white;
     text-decoration: none;
@@ -65,15 +55,44 @@ a{
 }
 
 
-.content{
-    position: absolute;
-    left: 14rem;
-    margin: 2rem 6rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; 
-    width:calc(100vw-200px);
+main{
+    background-color: skyblue;
+    grid-area: main;
 }
+
+footer{
+    background-color: springgreen;
+    grid-area: footer;
+}
+
+
+
+@media screen and (max-width:550px)
+{
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 3fr 0.5fr;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        "footer";
+    }
+
+    aside{
+        position: sticky;
+        top: 0;
+    }
+
+    /* this is just hit and trail */
+    .sidenav-links{
+        display: flex;
+        padding: 0;
+    }
+}
+
+
 
 
 /* Avatar styling from here */
