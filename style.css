@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Page Layout Styling Here */
+
+@media screen and (max-width:900px)
+{
+    aside{
+        height: 100%;
+        width: 120px;
+        position: fixed;
+        background: rgb(51, 151, 209);
+    }
+    
+    a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 6px 8px 6px 16px;
+        text-align: center;
+        font-family: 'Source Serif Pro';
+    }
+    
+    .content{
+        position: absolute;
+        left: 8rem;
+        margin: 2rem 4rem;
+    }
+}
+
+main{
+    display: flex;
+    width: 100vw;
+
+}
+aside{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background: rgb(51, 151, 209);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 6px 8px 6px 16px;
+    text-align: center;
+    font-family: 'Source Serif Pro';
+    font-style: bold;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+
+.content{
+    position: absolute;
+    left: 14rem;
+    margin: 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    width:calc(100vw-200px);
+}
+
+
+/* Avatar styling from here */
+
+.Main-Heading{
+    font-family: 'Lato';
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: rgb(51, 151, 209);
+    max-width: 900px;
+    margin: auto;
+    margin-top: 2rem;
+    display: block;
+    text-align: left;
+}
+
+.descriptionAvatar{
+    font-family: 'Lato';
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    padding: 0.5rem;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.subheadingAvatar{
+    font-family: 'Lato';
+    margin: 0.4rem;
+    padding: 0.4rem;
+    color:rgb(51, 151, 209);
+    font-size: 1.2rem;
+}
+
+/* Alert Styling from here */
+
+.alertContainer{
+    font-family: 'Lato';
+    padding: 0.5rem;
+    border: 1px solid rgb(121, 211, 246);
+    max-width: 900px;
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.alertContent{
+    display: flex;
+    flex-direction: row;
+    background: rgb(246, 169, 169);
+}
+
+.alertIcon{
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+.alertDescription{
+    float: right;
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-weight: 500;
+    font-family: 'Lato';
+}
