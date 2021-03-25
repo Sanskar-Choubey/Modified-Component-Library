@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-color:rgb(51, 151, 209);
+}
+
 .container{
     display: grid;
     height: 100vh;
@@ -17,8 +21,8 @@
         "aside main main main"
         "aside main main main"
         "aside main main main"
-        "aside footer footer footer";
-    grid-gap: 0.5rem;
+        "aside main main main";
+    grid-gap: 1rem;
 }
 
 header{
@@ -30,7 +34,7 @@ aside{
     grid-area: aside;
     height: 100%;
     position: fixed;
-    background: rgb(51, 151, 209);
+    background: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +66,13 @@ footer{
     grid-area: footer;
 }
 
-
+iframe{
+    max-width: 700px;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 @media screen and (max-width:550px)
 {
@@ -103,7 +113,6 @@ footer{
     margin: auto;
     margin-top: 2rem;
     display: block;
-    text-align: left;
 }
 
 .descriptionAvatar{
@@ -121,10 +130,13 @@ footer{
 
 .subheadingAvatar{
     font-family: 'Lato';
-    margin: 0.4rem;
-    padding: 0.4rem;
+    /* margin: 0.5rem; */
+    padding: 0.5rem;
     color:rgb(51, 151, 209);
     font-size: 1.2rem;
+    display: block;
+    max-width: 900px;
+    margin: auto;
 }
 
 /* Alert Styling from here */
