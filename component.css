@@ -665,12 +665,13 @@ input{
 
 .navContainer{
     border: 1px solid rgb(89, 185, 209);
-    max-width: 900px;
+    max-width: 700px;
     margin: auto;
     display: block;
-    width: 80%;
+    width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
+    height: 30vh;
 }
 
 .navbar{
@@ -699,7 +700,7 @@ input{
 .navLinks li{
     display: inline-block;
     margin: 0.3rem;
-    color: blue
+    color: white
     ;
 }
 
