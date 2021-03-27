@@ -168,19 +168,20 @@ iframe{
 {
     .container{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         grid-template-rows: 0.4fr 0.4fr 3fr 0.5fr;
         grid-template-areas: 
-        "header"
         "aside"
         "main"
-        "footer";
+        "main"
+        "main";
+        max-width: 500px;
     }
 
     aside{
         position: sticky;
         top: 0;
-        max-width: 700px;
+        width: 100%;
     }
 
     /* this is just hit and trail */
