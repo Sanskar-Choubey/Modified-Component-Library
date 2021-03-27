@@ -220,35 +220,3 @@ iframe{
     max-width: 900px;
     margin: auto;
 }
-
-/* Alert Styling from here */
-
-.alertContainer{
-    font-family: 'Lato';
-    padding: 0.5rem;
-    border: 1px solid rgb(121, 211, 246);
-    max-width: 700px;
-    margin: auto;
-    display: block;
-    border-radius: 0.5rem;
-}
-
-.alertContent{
-    display: flex;
-    flex-direction: row;
-    background: rgb(246, 169, 169);
-}
-
-.alertIcon{
-    height: 2rem;
-    width: 2rem;
-    margin: 0.5rem;
-}
-
-.alertDescription{
-    float: right;
-    font-size: 1rem;
-    margin: 0.5rem;
-    font-weight: 500;
-    font-family: 'Lato';
-}
