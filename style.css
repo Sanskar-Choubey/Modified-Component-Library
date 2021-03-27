@@ -26,18 +26,14 @@
     grid-gap: 1rem;
 }
 
-
-
 header{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1.7fr 2.5fr;
     grid-gap: 0.5rem;
     height: 20vh;
     border-radius: 0.5rem;
     grid-area: header;
 }
-
-
 
 .logo1{
     float: left;
@@ -53,6 +49,12 @@ nav{
     float: right;
 }
 
+nav li:hover{
+    cursor: pointer;
+    color: blue;
+    font-size: 1.5rem;
+}
+
 .nav-links{
     display: inline;
     color: black;
@@ -64,9 +66,10 @@ nav{
     left: 20px;
     font-family: 'Playfair Display';
     color: Black;
-    text-transform: capitalize;
+    text-transform: capitalize
     cursor: pointer;
     font-weight: 400;
+
 }
 
 span{
@@ -100,7 +103,6 @@ main{
     font-weight: 400;
 }
 
-
 aside{
     grid-area: aside;
     height: 100%;
@@ -109,10 +111,9 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5px );
-    -webkit-backdrop-filter: blur( 4.5px );
+    box-shadow: 0 8px 32px 0 rgba(23, 34, 177, 0.37);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 1;
 }
 
 .sidenav-links{
@@ -148,13 +149,15 @@ footer{
     max-width: 700px;
     margin: auto;
     display: block;
-    margin-top: 4rem;
+    margin-top: 6.5rem;
     text-align: center;
     grid-area: footer;
+    float: bottom;
+    font-weight: 400;
 }
 
 iframe{
-    max-width: 600px;
+    max-width:600px;
     display: block;
     margin: auto;
     margin-top: 1rem;
@@ -198,7 +201,7 @@ iframe{
     display: block;
 }
 
-.descriptionAvatar{
+.description{
     font-family: 'Lato';
     font-size: 1rem;
     letter-spacing: 0.5px;
@@ -211,7 +214,7 @@ iframe{
     display: block;
 }
 
-.subheadingAvatar{
+.subheading{
     font-family: 'Lato';
     /* margin: 0.5rem; */
     padding: 0.5rem;
