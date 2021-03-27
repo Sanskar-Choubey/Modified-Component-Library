@@ -181,12 +181,6 @@ iframe{
         top: 0;
         width: 100%;
     }
-
-    /* this is just hit and trail */
-    .sidenav-links{
-        display: flex;
-        padding: 0;
-    }
 }
 
 .Main-Heading{
