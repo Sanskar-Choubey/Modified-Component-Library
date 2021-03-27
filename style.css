@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
 
 *{
     padding: 0px;
@@ -25,10 +26,80 @@
     grid-gap: 1rem;
 }
 
+
+
 header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.5rem;
+    height: 20vh;
     border-radius: 0.5rem;
     grid-area: header;
 }
+
+
+
+.logo1{
+    float: left;
+    margin: 0.5rem;
+}
+
+.logo1 img{
+    height: 150px;
+    width: 150px;
+}
+
+nav{
+    float: right;
+}
+
+.nav-links{
+    display: inline;
+    color: black;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    position: relative;
+    top:40px;
+    left: 20px;
+    font-family: 'Playfair Display';
+    color: Black;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+span{
+    color: blue;
+}
+
+main{
+    max-width: 500px;
+    margin: auto;
+    display: block;
+}
+
+.tagline{
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    color:black;
+    margin-top: 5rem;
+    text-align: center;
+    font-family: 'EB Garamond';
+    font-size: 2.1rem;
+}
+
+.shortdescription{
+    max-width: 500px;
+    margin:auto;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: Black;
+    font-weight: 400;
+}
+
 
 aside{
     grid-area: aside;
@@ -61,8 +132,24 @@ main{
     grid-area: main;
 }
 
+.btn-group{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+.btn-group button{
+    margin: 1.5rem;
+    padding: 0.5rem;
+}
+
+
 footer{
-    background-color: springgreen;
+    max-width: 700px;
+    margin: auto;
+    display: block;
+    margin-top: 4rem;
+    text-align: center;
     grid-area: footer;
 }
 
