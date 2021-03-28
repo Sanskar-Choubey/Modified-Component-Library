@@ -120,12 +120,13 @@ aside{
     display: block;
     color: white;
     text-decoration: none;
-    padding: 6px 8px 6px 16px;
+    /* padding: 6px 8px 6px 16px; */
+    padding: 6px 8px 6px 8px;
     text-align: center;
     font-family: 'Source Serif Pro';
     font-style: bold;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 
