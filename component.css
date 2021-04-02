@@ -521,6 +521,7 @@ input{
     font-size: 0.7rem;
     margin: 0.3rem;
     text-align: left;
+    margin-left: 5rem;
     color:rgb(77, 235, 57) ;
 }
 
@@ -536,7 +537,13 @@ input{
     font-size: 0.7rem;
     margin: 0.3rem;
     text-align: left;
+    margin-left: 5rem;
     color: red;
+}
+
+.event-icons{
+    position: relative;
+    top: 10px;
 }
 
 /* Image Styling Starts Here */
