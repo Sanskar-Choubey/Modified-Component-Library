@@ -74,7 +74,7 @@
 }
 
 .success{
-    background: rgb(115, 236, 161);
+    background: rgb(65, 209, 46);
 }
 
 .warning{
@@ -213,6 +213,7 @@
     color: green;
     background-color: white;
 }
+
 .btn:hover{
     background-color: rgb(115, 236, 161);
 }
