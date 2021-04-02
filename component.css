@@ -341,6 +341,7 @@
     display: block;
     border: 1px solid blue;
     border-top-left-radius: 2.5rem ;
+    padding:1rem;
 }
 
 .cardWithDismiss img{
@@ -363,6 +364,7 @@
     background-color: white;
     border: 1px solid rgb(89, 185, 209);
     color: black;
+    margin-bottom: 0.5rem;
 }
 
 .cardWithOverlay{
